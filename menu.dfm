@@ -153,10 +153,8 @@ object Form2: TForm2
       end
     end
     object Modul21: TMenuItem
-      Caption = 'Modul 2'
     end
     object Modul41: TMenuItem
-      Caption = 'Modul 4'
     end
   end
 end
