@@ -128,12 +128,13 @@ object Form8: TForm8
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45102.577229108800000000
-    ReportOptions.LastChange = 45102.601313310200000000
+    ReportOptions.LastChange = 45105.505601805550000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
+    OnClickObject = frxjadwalClickObject
     Left = 728
     Top = 88
     Datasets = <
@@ -210,7 +211,7 @@ object Form8: TForm8
           DataSetName = 'frxDBjadwal'
           DisplayFormat.DecimalSeparator = '.'
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
+          Font.Color = clGreen
           Font.Height = -13
           Font.Name = 'Arial'
           Font.Style = []

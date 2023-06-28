@@ -27,8 +27,9 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure BitBtn1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure frxjadwalClickObject(View: TfrxView; Button: TMouseButton;
+      Shift: TShiftState; var Modified: Boolean);
   private
     { Private declarations }
   public
@@ -85,6 +86,19 @@ procedure TForm8.Button2Click(Sender: TObject);
 begin
 frxjadwal.ShowReport();
 end;
+
+procedure TForm8.frxjadwalClickObject(View: TfrxView;
+  Button: TMouseButton; Shift: TShiftState; var Modified: Boolean);
+begin
+   if View.Name='Memo7' then
+   begin
+     ADOQuery2.SQL.Clear;
+     ADOQuery2.SQL.Add('select * from jadwal_table where kelas="'+view.TagStr+'"');
+     ADOQuery2.Open;
+
+     frxdetailjadwal.ShowReport();
+   end;
+   end;
 
 end.
 

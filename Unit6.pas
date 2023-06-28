@@ -69,11 +69,13 @@ begin
 end;
 
 procedure TGRAFIK.Button2Click(Sender: TObject);
+
+var i:Integer;
 begin
-  var i: Integer;
 begin
 for i:=1 to StringGrid1.RowCount-1 do
 Chart1.Series[0].Add(StrToFloat(StringGrid1.Cells[1,i]),StringGrid1.Cells[0,i]);
+end;
 end;
 
 end.
