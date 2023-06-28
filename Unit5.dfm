@@ -16,9 +16,9 @@ object tugasmandiri2: Ttugasmandiri2
   object tugasmandiri2: TLabel
     Left = 136
     Top = 16
-    Width = 160
+    Width = 251
     Height = 25
-    Caption = ' KONDISIONAL'
+    Caption = 'CEK NILAI BOBT SISWA'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -21

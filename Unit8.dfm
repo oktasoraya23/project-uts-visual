@@ -110,7 +110,7 @@ object Form8: TForm8
     SQL.Strings = (
       'select*from jadwal_table')
     Left = 128
-    Top = 32
+    Top = 8
   end
   object frxDBjadwal: TfrxDBDataset
     UserName = 'frxDBjadwal'
@@ -128,7 +128,7 @@ object Form8: TForm8
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45102.577229108800000000
-    ReportOptions.LastChange = 45105.505601805550000000
+    ReportOptions.LastChange = 45105.649001388900000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -206,7 +206,7 @@ object Form8: TForm8
           Left = 117.165430000000000000
           Width = 177.637910000000000000
           Height = 34.015770000000000000
-          DataField = 'kelas'
+          TagStr = '[frxDBjadwal."kelas"]'
           DataSet = frxDBjadwal
           DataSetName = 'frxDBjadwal'
           DisplayFormat.DecimalSeparator = '.'
@@ -450,7 +450,7 @@ object Form8: TForm8
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45102.577229108800000000
-    ReportOptions.LastChange = 45102.676544768500000000
+    ReportOptions.LastChange = 45105.648578368050000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -527,7 +527,6 @@ object Form8: TForm8
           Left = 79.370130000000000000
           Width = 154.960730000000000000
           Height = 34.015770000000000000
-          DataField = 'Matkul'
           DataSet = frxDBdetailjadwal
           DataSetName = 'frxDBdetailjadwal'
           DisplayFormat.DecimalSeparator = '.'
@@ -539,7 +538,7 @@ object Form8: TForm8
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBdetailjadwal."Matkul"]')
+            '[frxDBdetailjadwal."kelas"]')
           ParentFont = False
           VAlign = vaCenter
         end

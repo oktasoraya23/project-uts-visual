@@ -21,10 +21,12 @@ type
     Series1: TPieSeries;
     BitBtn1: TBitBtn;
     StringGrid1: TStringGrid;
+    Button1: TButton;
     procedure Button4Click(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
  
   private
     { Private declarations }
@@ -50,6 +52,7 @@ end;
 procedure TGRAFIK.BitBtn1Click(Sender: TObject);
 begin
   StringGrid1.Cells[1,ComboBox1.ItemIndex+1]:=Edit1.Text;
+
 end;
 
 procedure TGRAFIK.FormCreate(Sender: TObject);
@@ -69,13 +72,18 @@ begin
 end;
 
 procedure TGRAFIK.Button2Click(Sender: TObject);
-
 var i:Integer;
 begin
-begin
-for i:=1 to StringGrid1.RowCount-1 do
-Chart1.Series[0].Add(StrToFloat(StringGrid1.Cells[1,i]),StringGrid1.Cells[0,i]);
+  begin
+  for i:=1 to StringGrid1.RowCount-1 do
+  Chart1.Series[0].Add(StrToFloat(StringGrid1.Cells[1,i]),StringGrid1.Cells[0,i]);
+  end;
 end;
+
+procedure TGRAFIK.Button1Click(Sender: TObject);
+begin
+ Edit1.Text := '';
+ ComboBox1.Text := '';
 end;
 
 end.

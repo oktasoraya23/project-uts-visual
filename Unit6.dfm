@@ -1,6 +1,6 @@
 object GRAFIK: TGRAFIK
-  Left = 251
-  Top = 132
+  Left = 201
+  Top = 178
   Width = 851
   Height = 394
   Caption = 'GRAFIK DAN STRINGGRID'
@@ -161,5 +161,14 @@ object GRAFIK: TGRAFIK
     Width = 345
     Height = 177
     TabOrder = 7
+  end
+  object Button1: TButton
+    Left = 248
+    Top = 88
+    Width = 81
+    Height = 25
+    Caption = 'Hapus'
+    TabOrder = 8
+    OnClick = Button1Click
   end
 end
