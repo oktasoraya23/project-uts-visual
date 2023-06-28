@@ -122,7 +122,7 @@ object Form2: TForm2
     Left = 56
     Top = 200
     object Modul11: TMenuItem
-      Caption = 'Modul 1'
+      Caption = 'project'
       object Kalkulator1: TMenuItem
         Caption = 'Kalkulator'
         OnClick = Kalkulator1Click
